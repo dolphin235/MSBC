@@ -1,0 +1,41 @@
+[
+I recently wrote an article examining the concentrations of malware hosting servers located in different regions of the world.  As seen in Figure 1, Belarus and China, had the highest concentrations of malware hosting sites per 1,000 Internet hosts in the second quarter of 2012 (2Q12), based on data from the Microsoft Security Intelligence Report volume 13.  Naturally, this led to a few people asking me for more details on what has been happening in these locations.  I recently published an article with more details on China called, The Threat Landscape in China: A Paradox.  This article focuses on Belarus.  
+Figure 1: Top 20 locations with highest number of malware hosting sites per 1,000 Internet hosts in 2Q12
+
+The Threat landscape in BelarusBesides the relatively high concentration of malware hosting sites, Belarus also has relatively high levels of phishing sites and drive-by download sites as can be seen in Figure 2.  The number of phishing sites per 1,000 hosts found in Belarus in 2Q12 was more than five times the worldwide average. 
+Figure 2: Malicious website statistics for Belarus
+
+The malware infection rate (CCM) of Belarus trended up sharply in the first half of 2012 as seen in Figure 3.  The Microsoft Malicious Software Removal tool (MSRT) detected malware on 7.2 of every 1,000 computers scanned in Belarus in 2Q12, compared to the 2Q12 worldwide average CCM of 7.0. Figure 3 shows the CCM trend for Belarus over four quarters, compared to the world as a whole.  Figure 4 shows that the most common category of threat found in Belarus in 2Q12 was Miscellaneous Potentially Unwanted Software. It affected 60.3 percent of all computers with detections there, down from 65.9 percent in 1Q12.
+Figure 3 (left): CCM infection trends in Belarus and worldwide; Figure 4 (right): Malware and potentially unwanted software categories in Belarus in 2Q12, by percentage of computers reporting detections, note: totals exceed 100 percent because some computers are affected by more than one kind of threat
+
+
+
+ 
+
+
+
+
+The most common families of threats found in Belarus in can be seen in Figure 5.  The most common threat family in Belarus in 2Q12 was Win32/Pameseg, which affected 35.3 percent of computers with detections in Belarus. Win32/Pameseg is a fake program installer that requires the user to send SMS messages to a premium number to successfully install certain programs.  Win32/Pameseg was found in many locations in Eastern Europe during 2Q12, including Belarus, Estonia, Georgia, Kazakhstan, Latvia, Lithuania, Moldova, Russia, and the Ukraine.
+Figure 5 (top): The top 10 malware and potentially unwanted software families in Belarus in 2Q12; Figure 6 (bottom): Screenshot examples of Win32/Pameseg prompting the user to send an SMS message
+ 
+
+
+
+
+
+
+
+
+The second most common threat family in Belarus in 2Q12 was Win32/Keygen, which affected 15.4 percent of computers with detections in Belarus. Win32/Keygen is a generic detection for tools that generate product keys for various software products.  I have written about this threat before.  Russia and the Ukraine were among the locations with the most Win32/Keygen detections in 2Q12.
+The third most common threat family in Belarus in 2Q12 was Win32/Dorkbot, which affected 11.2 percent of computers with detections in Belarus. Win32/Dorkbot is a worm that spreads via instant messaging and removable drives. It also contains backdoor functionality that allows unauthorized access and control of the affected computer. Win32/Dorkbot may be distributed from compromised or malicious websites using PDF or browser exploits.
+Figure 7: Some Win32/Dorkbot variants can spread via Skype by first downloading and installing another component malware.  The malicious malware component uses the Skype APIs to send a malicious link to all the contacts at a specified time interval. The message that contains the malicious link may look like the following:
+
+Figure 8 shows the growth in the number of computers connecting to Windows Update and Microsoft Update in Belarus over the last four years, indexed to the total usage for both services in Belarus in 2008. In 2012, the number of computers connecting to Windows Update and Microsoft Update in Belarus was up 48.5 percent from 2011, and up 307.7 percent from 2008. By comparison, worldwide use of the two services increased 18.3 percent between 2011 and 2012, and 59.7 percent from 2008 to 2012.  Of the computers using the two update services in Belarus in 2012, 56.6 percent were configured to use Microsoft Update, compared to 58.5 percent worldwide.
+Figure 8: Windows Update and Microsoft Update usage in Belarus and worldwide
+
+If I was limited to providing only one piece of advice to consumers and organizations in Belarus, given the types of threats found there and the high concentration of malware hosting servers there, it’s super important for consumers and organizations to run antimalware software from a trusted vendor and keep it up to date.  A list of such vendors is available here: http://www.microsoft.com/windows/antivirus-partners/windows-7.aspx
+Tim RainsDirectorTrustworthy Computing 
+ 
+ 
+
+]

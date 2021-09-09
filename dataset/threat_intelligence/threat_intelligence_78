@@ -1,0 +1,47 @@
+[
+In the first part of this series on the threat landscape in the European Union (EU) I examined threats found in the location with the highest malware infection rate, Romania.  In the second part of the series I discussed malicious websites that are hosted in the EU.  In this final article in the series I will look at the EU member states that have the lowest malware infection rates and share insights that other, more infected locations, might use to improve. The analysis in all three of these articles leverages data from the recently released Microsoft Security Intelligence Report volume 14 (SIRv14) and previous volumes and focuses on the fourth quarter of 2012 (4Q12). 
+Before looking at the locations with the lowest malware infection rates in the EU, first let’s look at how threat categories and families have been trending in the EU as a whole during the eighteen month period between the third quarter of 2011 (3Q11) and the fourth quarter of 2012 (4Q12).  Figure 1 illustrates how threat categories have been trending in the EU.  In my opinion, the most serious concern is the upward trend in exploit activity in the EU.  Increased levels of drive-by download attacks and parser exploit attacks are major contributors to this trend.  I discuss these attacks in more detail below.  The other disconcerting trend is the consistently high levels of, and recent uptick in, detections of Miscellaneous Potentially Unwanted Software.  Much of this looks to be related to increased usage of tools that enable software piracy.
+Figure 1 (left): Malware and potentially unwanted software categories in the European Union between 3Q11 and 4Q12, by percentage of computers reporting detections, note: totals for each time period may exceed 100 percent because some computers report more than one category of threat in each time period; Figure 2 (right): Unique computers with detections of notable threats in the European Union between the third quarter of 2011 (3Q11) and the fourth quarter of 2012 (4Q12)
+
+
+
+ 
+ 
+
+
+
+There is an interesting mix of threat families detected/cleaned in the EU as seen in Figure 2.  The top threat found in the EU is Win32/Keygen.  Keygen is a generic detection for software activation key generators that generate keys for various software products.  Attackers know there are bargain hunters out there looking for free software, music and movies.  They use this desire and leverage social engineering to install malware on victims’ systems.  Subsequently on computers where Keygen is detected, it is common to find other instances of additional malware.  For more details on this threat read this article.  Not searching for and using these illegitimate software activation key generators will help you avoid being victimized.
+Signs of drive-by download attacks in the EU can also be seen in Figure 2, as Blacole and IframeRef are related to this type of attack.  Running the latest version of software when possible and keeping all software installed on a system up-to-date will make it much harder for these attacks to succeed.
+Also seen in Figure 2 is Win32/Pdfjsc.  This is a family of specially crafted PDF files that exploit Adobe Acrobat and Adobe Reader vulnerabilities. These files contain JavaScript that executes when the PDF file is opened.  Detections of this family surged in the fourth quarter of 2012 (4Q12).  The rise in detections observed in 4Q12 might have been caused by increased use of this technique by a number of exploit kits, including Blacole.  Again, running the latest version of Adobe Reader and Acrobat, and keeping this software up-to-date with the latest security updates will help protect you from this threat.
+Now let’s look at the locations in the EU that have the lowest malware infection rates for some insights into how they manage this.  As seen in Figure 3, twenty-three of the twenty-seven member states in the EU had malware infection rates below the worldwide average in 4Q12.  The locations with the lowest malware infection rates in the EU in 4Q12 were Finland, Denmark, the Czech Republic, Sweden and France.  We found 0.8 systems infected with malware for every 1,000 systems that the Microsoft Malicious Software Removal Tool (MSRT) scanned (a measure called CCM) in Finland in 4Q12.  The CCM in Denmark was 1.5, while the CCM in the Czech Republic and Sweden was 1.6.  The CCM in France in 4Q12 was 1.9.
+Figure 3: Locations in the European Union that had malware infection rates below the worldwide average in the fourth quarter of 2012 (4Q12)
+
+I have written about Finland’s consistently low malware infection rates in the past:
+
+Finland – Lessons from Some of the Least Malware Infected Countries in the World – Part 3
+TeliaSonera – Finland’s Secret for a Secure Internet
+
+Other locations in the EU can learn from Finland’s approach to online safety and potentially reduce their malware infection rates.
+The factors contributing to regional malware infection rates include numerous socio-economic factors.  We recently published a study called “Linking Cybersecurity Policy and Performance” focused on identifying such correlations and have written several related articles:
+
+Special Edition Security Intelligence Report Released – How Socio-economic Factors Affect Regional Malware Rates
+Connections Among Socio-Economic Factors, Public Policies and Cybersecurity Outcomes
+Regime Stability, Demographic Instability and Regional Malware Infection Rates – Part 1: Egypt
+Regime Stability, Demographic Instability and Regional Malware Infection Rates – Part 2: Syria
+Regime Stability, Demographic Instability and Regional Malware Infection Rates – Part 3: Iraq
+
+Figure 4 illustrates some of the socio-economic factors that are correlated with regional malware infection rates, based on data from 2011 for France.  To learn more about these factors, please read the new study.
+Figure 4: Some of the socio-economic factors examined in the new study, with values for France from the second quarter of 2011
+
+I also asked Microsoft’s Chief Security Advisor for EMEA, Monika Josi, about some of the ways that locations in the EU with low malware infection rates accomplish this.
+From what I am seeing, countries with lower infection rates tend to have an open climate to foster an active co-operation between the regulators, government/policy bodies and the various stakeholders within both the public and the private sector. This often leads to a cybersecurity strategy that finds broad support amongst the different government bodies and private sector. Interestingly enough, I find that many have signed and ratified international conventions such as the Council of Europe’s Budapest Convention against Cybercrime and/or have joined the London Action Plan, an international spam enforcement cooperation. Furthermore, I often see a strong will from governments that violating Intellectual Property Rights is not seen as a trivial offence.
+These ‘setting the tone’ actions seem to drive an active CERT community, ISP’s recognizing their role in a country’s IT-ecosystem, active public/private partnerships (both on national and international level) to fight cybercrime and a high-level of public awareness around security issues, such as Phishing, Drive-by Attacks and Social Engineering. We also see a link between piracy and security in the consumer space, as users surfing for pirated/free software are often tricked into loading malware onto their machines and disable the automatic software update features, which leaves more vulnerable. So a strong support for Intellectual Property Rights certainly helps to raise awareness in this area.
+At the end of the day, I see a growing recognition that the topic of cybersecurity cannot be solved by one stakeholder or one country alone: it needs everybody on board to address this topic. And I certainly believe that by focusing on technical measures alone, we will not be able to find an effective way to fight cybercrime so research/activities to help us to better understand the socio-economic factors will be of high value for the future. At the end of the day, there is always a human being behind an exploit.
+Monika Josi, Microsoft Chief Security Advisor for EMEA
+This concludes our three part series on the threat landscape in the European Union.  Thank-you for reading.
+Tim RainsDirectorTrustworthy Computing
+ 
+ 
+ 
+
+]

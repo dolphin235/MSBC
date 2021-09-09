@@ -1,0 +1,26 @@
+[
+This week we published a special edition to the Microsoft Security Intelligence Report titled “Linking Cybersecurity Outcomes and Policies.” The report contains a new methodology for identifying the linkages between socio-economic factors, public policies, and cybersecurity outcomes. We are making this report available to help encourage further discussion and research on the relationship between policy decisions and technical outcomes. This post is intended to help provide insight into the methodology that was used in the analysis.
+In our discussions with governments around the world, we have been asked if there exists a relationship between a country or region’s malware infection rate based on data from the Microsoft Security Intelligence Report (Computers Cleaned per Mille CCM) and the demographics or socioeconomic factors in that region. While direct correlations can be made, often times they do not yield actionable insights into a region’s particular cybersecurity performance. We conducted the research in this report in an attempt to identify patterns or policies that could help to distinguish countries with different cybersecurity levels (as measured by CCM.)
+
+
+
+First, we looked to see if we could predict a location’s CCM given non-technical measures using linear regression modeling. A regression analysis allowed us to build a model that shows the predicted impact on CCM as the various indicator variables (such as GDP, Computers Per Capita, etc.) fluctuate. By solving for a universal starting point, we then were able to use the model to predict CCM at the country or region level, with differences in predicted CCM across countries being driven by differences in the indicator variables (e.g., given the GDP Per Capita, Computers Per Capita, etc., we can predict CCM). If you are curious, we used Correlated Component Regression (CCR) to build this model. We chose to use CCR modeling because it offers an advantage over other techniques, in that it reduces potential error created by datasets that have a large number of correlated predictors (such as computers per capita and percentage of a population with an Internet connected computer), relative to data points – which was beneficial to this dataset, given that we used 34 predictors to predict CCM, based on 105 countries/regions. 
+ 
+Figure 1 – Actual vs. Predicted Cybersecurity Performance per Country or Region
+
+
+The strength of this model is expressed by the term R2 which explains how much of the predicted value can be explained by the regression formula. Generally, ranging from 0 to 1 an R2 of 0 would indicate no predictive power, 0.1-.03 weak prediction, 0.4-0.6 moderate prediction and 0.7-1 strong prediction. Our model has an R2 of 0.68, moderate predictive ability. While purely scientific studies may strive for R2 values of .9 or above, we consider our model to be a good starting point for this discussion. Based on this we progressed with further analysis to understand what these countries might be doing to explain different CCM levels. As a next step, we used latent class segmentation to classify each country or region into one of three clusters, based on both their actual and predicted CCM. The end result is a model with three distinct clusters of countries, which we call Maximizers, Aspirants, and Seekers.
+ 
+Figure 2 – Cluster Analysis of Cybersecurity Performance
+
+
+
+Based on these cluster of countries we were able to look for patterns in how things like policies, infrastructure, and technology usage differ depending on what cluster a country or region belongs to (Maximizers, Aspirants or Seekers). The table below shows the distribution of selected factors across the clusters.
+
+Table 1 – Impact of Policy upon Cybersecurity Performance
+Of course this model is by no means perfect, but we believe it is a step in the right direction to understanding some of the factors that drive security outcomes in factors around the world. Most of all, as national and international policymakers struggle with cybersecurity concerns, we encourage others to produce more research like this to help link cybersecurity policies and outcomes.
+I encourage you to download the paper to learn more about the methodology and conclusions from our analysis.
+ 
+ 
+
+]

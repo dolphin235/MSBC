@@ -1,0 +1,71 @@
+[
+Systems that host and distribute malware are located all over the world.  These systems have typically been compromised and are being used for illicit purposes unbeknownst to the administrators of the systems.  These compromised machines can be personal computers located in homes and small businesses, as well as servers in data centers. 
+Some background informationTo get a sense of how attackers use malware hosting servers, just look at drive-by download attacks as one example.  A drive-by download site is a website that hosts one or more exploits that target specific vulnerabilities in web browsers, and browser add-ons. Malware distributors use various techniques to attempt to direct internet users to websites that have been compromised or are intentionally hosting hostile code. Users with vulnerable computers can be secretly infected with malware simply by visiting such a website, even without attempting to download anything themselves.  I have written about drive- by download attacks before: What You Should Know About Drive-By Download Attacks part 1, part 2.
+Figure 1: One example of a drive-by download attack that leverages a malware hosting site
+ 
+
+One rich source of data that Microsoft uses to understand how attackers are using malware-hosting sites is Internet Explorer (IE).  IE runs on many millions of systems around the world.  One of the protection technologies built into Internet Explorer is SmartScreen Filter.  This feature helps provide protection against sites that are known to host malware, in addition to phishing sites. SmartScreen Phishing Filter has been built into IE since version 7, and SmartScreen anti-malware protection is available in version 8 and later versions.  If you are still running IE version 6, you are missing the benefit of these, and other, protection technologies – now is a great time to upgrade.
+SmartScreen Filter uses URL reputation data and Microsoft antimalware technologies to determine whether those sites distribute unsafe content. As with phishing sites, Microsoft keeps track of how many people visit each malware-hosting site and uses the information to improve SmartScreen Filter and to better combat malware distribution.
+Figure 2: SmartScreen Filter in Internet Explorer displays a warning when a user attempts to download an unsafe file
+
+There are two key measurements to understand: the number of malware-hosting sites and the number of malware impressions.  A malware impression is a single instance of a user attempting to visit a web page known to host malware and being blocked by the SmartScreen Filter in IE version 8 or a later version.  Figure 3 compares the volume of active malware-hosting sites in the Microsoft URL Reputation Service database each month with the volume of malware impressions tracked by Internet Explorer.
+Figure 3: Malware hosting sites and impressions tracked each month in the first half of 2012 (1H12), relative to the monthly average for each
+
+As with phishing, malware-hosting impressions and active sites rarely correlate strongly with each other, and months with high numbers of sites and low numbers of impressions (or vice versa) are not uncommon.
+The global distribution of malware hosting sitesAs I mentioned earlier, systems that host and distribute malware are located all over the world.  Figure 4 shows the geographic distribution of malware hosting sites reported to Microsoft in the first (1Q12) and second (2Q12) quarters of 2012.
+Figure 4: Malware distribution sites per 1,000 Internet hosts for locations around the world in 1Q12 (left) and 2Q12 (right)
+
+
+
+
+ 
+
+
+
+Sites that hosted malware were significantly more common than phishing sites in 1H12.  China, with one of the lowest concentrations of phishing sites in the world in the first half of 2012, had the second highest concentration of malware hosting sites in the second quarter of 2012 (8.1 malware hosting sites per 1,000 Internet hosts).
+Figure 5: Top 20 locations with highest number of malware hosting sites per 1,000 Internet hosts in 2Q12
+
+As seen in Figure 5, other locations with relatively high concentrations of malware-hosting sites included Belarus (8.8), Ukraine (8.1), Russia (7.7), the United States (5.6) and Romania (5.5). Locations with lower concentrations of malware-hosting sites included Thailand (1.2), Malaysia (1.3), and Mexico (1.5).
+Taking a closer look at the distribution of malware-hosting sites in the United States, as with phishing sites, U.S. states with more internet hosts tend to have higher concentrations of phishing sites as well, although there are many exceptions.  As seen in Figure 6, U.S. states with relatively high concentrations of malware hosting sites include California (8.4 per 1,000 Internet hosts in 2Q12), Michigan (8.2), and Texas (7.0). States with relatively low concentrations of malware hosting sites include Kentucky (2.0), South Carolina (2.2), and Oklahoma (1.9).
+Figure 6: Malware distribution sites per 1,000 Internet hosts for US states in 1Q12 (left) and 2Q12 (right)
+
+
+
+ 
+ 
+
+
+
+What threats are hosted on malware hosting sites?We can get a glimpse into the types of threats hosted on malware-hosting sites using data from SmartScreen Filter.  Figure 7 shows the categories of threats hosted at URLs that were blocked by SmartScreen Filter in the first half of 2012 (1H12). Trojans, threats that pretend to be one thing but are really another, make up 80.6 percent of the threats blocked in 1H12.  I consider Trojan Downloaders and Droppers to be among the worst threats as their primary purpose is to download or drop more malware on the systems they compromise.  Many times, Trojan Downloaders and Droppers enlist compromised systems into botnets that are then used for nefarious purposes.
+Figure 7: Categories of malware found at sites blocked by SmartScreen Filter in 1H12, by percent of all malware impressions
+ 
+
+Figure 8 shows the top 15 families of threats hosted at URLs that were blocked by SmartScreen Filter in the first half of 2012 (1H12).  Most of the families on the list are generic detections for a variety of threats that share certain identifiable characteristics.
+Figure 8: Top families found at sites blocked by SmartScreen Filter in 1H12, by percent of all malware impressions
+
+
+Win32/Swisyn, the family responsible for the most malware impressions in 1H12, is a family of Trojans that drops and executes malware on infected computers. These files may be embedded as resource files, and are often bundled with legitimate files in an effort to evade detection. Sites hosting Swisyn accounted for 24.1 percent of malware impressions in 1H12, an increase from 10.4 percent in 2H11.
+Win32/Meredrop, is a generic detection for Trojans that drop and execute multiple forms of malware on local computers. These Trojans are usually packed, and may contain multiple Trojans, backdoors, or worms. Dropped malware may connect to remote websites and download additional malicious programs. Sites that host Meredrop accounted for 9.0 percent of malware impressions in 1H12, an increase from 1.8 percent in 2H11.
+Win32/Startpage, found on sites that accounted for 15.7 percent of malware impressions in 2H11, decreased to 2.9 percent in 1H12. Startpage is a generic detection for malware that changes the home page of an affected user’s web browser without consent.
+
+Notice threat number 7, Blacole, and number 15, JS/BlacoleRef, on the list are related to detection of the “Black Hole” exploit kit or components of it.  I have written about this kit on a few occasions in the past:
+
+The Rise of the “Blackhole” Exploit Kit: The Importance of Keeping All Software Up To Date
+“Blackhole” Exploit Kit Activity Peaks as Exploit Activity on the Internet Reaches New Heights
+
+Also notice threat number 9 on the list – Win32/Banload.  Banload is a detection for a family of Trojans that downloads other malware. These downloaded malware are usually members of the Win32/Banker family; Trojans that steal banking credentials and other sensitive data, and send it back to a remote attacker.  Most Win32/Banker variants target customers of Brazilian banks, though some variants target customers of other banks.  These threats have been targeting banking users in Brazil for many years, but have been detected in other countries in recent periods.  Banload was detected on 8.2% of systems infected with malware in Brazil in 2Q12, while Banker was found on 5.2% of infected systems.
+Malware hosting sites play an important part of the infrastructure that attackers use for drive-by download attacks and in other attack scenarios.  These attacks have been increasing in popularity for the last couple of years, and seem poised to continue doing so into the foreseeable future.  As long as attackers continue to get a return on their investment they will continue to use this tactic.  But system administrators and internet users have things they can do to help protect systems from compromise.
+
+Keep all software updated: keep all of the software installed on your systems up to date with the latest service packs and security updates. This includes the operating systems, web browsers, productivity suites, all applications, and software that might have been pre-installed by manufacturers. All software installed on systems must be kept up to date, whether it is used or not. 
+Minimize attack surface: uninstall software and add-ons that are not used and/or not necessary. This will reduce the attack surface and simplify the amount of software you need to keep up to date on your systems. Disable unneeded software that can’t be uninstalled.
+Newer software is better: the data suggests attackers are more successful when targeting older platforms, web browsers and document parsers. Where possible use the most recent versions of operating systems, browsers, document parsers, etc.
+Use caution surfing: be selective about what websites you decide to connect to, and restrict the sites that corporate assets can connect to. Avoid surfing the internet while logged onto systems as an Administrator – use accounts that have limited privileges like a standard user account. If you have servers in your environment, avoid surfing the Internet using these systems. This will help protect the directories and data that servers are typically used to store and process. 
+Careful who you talk to online: be selective about the emails you open, the instant messages you interact with and the URLs you click on.
+Use anti-malware software: run anti-malware software from a trusted vendor and keep it up to date.
+Use web browser and search protections: leverage the protection technologies that are available in modern web browsers and search engines. As I mentioned, SmartScreen Filter built into newer versions of Internet Explorer helps protect against sites known to distribute malware by blocking navigation to malicious sites or downloads. Anti-malware protection helps prevent the download of harmful software.
+
+Tim RainsDirectorTrustworthy Computing 
+ 
+ 
+
+]

@@ -1,0 +1,11 @@
+[
+If you are a regular reader of this blog, you know about many of the ways Microsoft works to improve security in our own products and services, as well as the broader technology industry.
+We’ve blogged about our commitment to develop more secure software from the ground up, our efforts to improve security in the cloud, and our comprehensive research on security threats.
+Microsoft also offers regular security updates and support for security researchers, along with successful industry partnerships like our Microsoft Active Protections Program.
+Today, I’m pleased to share an update on another important security offering, the Enhanced Mitigation Experience Toolkit (EMET). Available for free, EMET helps prevent attackers from gaining access to computers, works well in the enterprise, and protects across a wide range of scenarios.
+Microsoft just released EMET version 4.1, with updates that simplify configuration and enable faster deployment. So if you haven’t already installed previous versions, now is a great time to give it a try.
+EMET is available for Windows 8, Windows 7, Windows Vista Service Pack 1 and above, and Windows XP Service Pack 3 and above.  Once installed, and configured to provide protection for a designated piece of software, EMET works quietly in the background without interrupting your computer use. Like any security tool, EMET doesn’t guarantee that you’ll never have any problems, but it does make it harder for an attacker to succeed.
+For more information on EMET, check out this article, and download EMET 4.1 today.
+ 
+
+]

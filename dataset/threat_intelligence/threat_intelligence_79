@@ -1,0 +1,54 @@
+[
+It’s time for our semi-annual inspection of the threat landscape in the European Union (EU).  This analysis leverages data from the recently released Microsoft Security Intelligence Report volume 14 (SIRv14) and previous volumes.  The focus of this analysis is the second half of 2012.  If you are interested in prior analysis we have done on the EU please see the following articles:
+
+Cyber-Threats in the European Union
+The Threat Landscape Shifts Significantly in the European Union – Part 1
+The Threat Landscape Shifts Significantly in the European Union – Part 2
+The Threat Landscape Shifts Significantly in the European Union – Part 3
+Cyber-Threats in the European Union: First Half 2012
+
+Although the malware infection rate in Romania trended down in the second half of 2012, Romania continues to have the highest malware infection rate of any country in the EU.  In the fourth quarter of 2012 (4Q12) Romania’s malware infection rate was 12.4 systems infected with malware for every 1,000 that the MSRT scanned there, as seen in Figure 1.  This is over double the worldwide average of 6.0 for the same time period.  The most common category in Romania in 4Q12 was Miscellaneous Potentially Unwanted Software that affected 43.3 percent of all computers with detections there, up from 37.4 percent in 3Q12. 
+Figure 1 (left): EU countries with the highest malware infection rates (CCM); Figure 2 (right): Malware and potentially unwanted software categories in Romania in 4Q12, by percentage of computers reporting detections, note: totals for each time period may exceed 100 percent because some computers report more than one category of threat in each time period
+
+
+
+ 
+ 
+
+
+
+Figure 3 contains the list of the top ten threat families found in Romania in 4Q12. This particular mix of threats tells me that software piracy is likely contributing to the high malware infection rates in Romania.  According to data published by the BSA  in their 2011 Piracy Study, the piracy rate in Romania in 2011 was 63 percent versus the worldwide average of 43 percent.  Two threat families in the top ten found in Romania in 4Q12, Win32/Keygen and Win32/Wpakill, are commonly associated with software piracy and are known to allow attackers to use social engineering to install malware on victims’ systems.
+Both of these threats were also on the top ten list of threats found in Romania in the first half of 2012. 
+The presence of JS/IframeRef and Win32/Pdfjsc in the top ten list of threats in Romania indicates that drive-by download attacks and exploits are being used to attack systems in Romania.  Win32/Sality is number two on the list and found on 12.7 percent of systems with detections in Romania; this is a threat I have written about recently.
+Worms were found on almost a quarter of systems with threat detections in Romania.  Among other attack vectors, these worms are capable of spreading via USB/removable drives.
+Figure 3 (left): The top 10 malware and potentially unwanted software families in Romania in 4Q12; Figure 4 (right): Malicious website statistics for Romania
+
+
+
+ 
+ 
+
+
+
+In terms of threats being hosted in Romania, as seen in Figure 4, phishing sites and malware hosting sites were well above the worldwide average in Romania in 4Q12.  High levels of web based threats is typical of regions that have high malware infection rates and consistent Internet connectivity as attackers use compromised systems to host malicious websites.
+Another factor contributing to the high malware infection rates and malicious websites in Romania is that 32% of the systems In Romania do not have up-to-date real-time antivirus software protecting them.  This is well above the worldwide average of 24% of systems lacking up-to-date real-time anti-virus.
+The call to action for computer users in Romania:
+
+Avoid searching for or using pirated software as attackers take advantage of the desire for free or heavily discounted software to trick users into loading malware onto their systems.
+Use real-time antivirus software from a vendor you trust and keep it up-to-date.  A list of such vendors is here.  If you have Windows 8, ensure that Windows Defender is active on your system if trial anti-virus software has expired.
+Keep all of the software on your system up-to-date including Microsoft software, Adobe, Java, etc.  Attackers are trying to take advantage of known vulnerabilities in all software – so this is a very effective way to protect systems.
+
+I will look at threats in other locations in the EU in the next part of this series.
+Tim RainsDirectorTrustworthy Computing
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+]
