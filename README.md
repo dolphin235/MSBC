@@ -1,2 +1,2 @@
-# MSBC
-Microsoft Security Blog Crawler
+# MSBcrawler
+Microsoft Security Blog crawler
